@@ -19,8 +19,8 @@
 						window.location = inputTextValue;
 
 				inputText = inputTextValue.split(";");
-				window.alert(inputText.length);
 				if (inputText.length == 2)
+				{
 						if (inputText[0] === "g")
 							window.location = "http://www.google.com/search?q=" + inputText[1];
 						else if (inputText[0] === "yt")
@@ -31,7 +31,9 @@
 							window.location = "https://scholar.google.pt/scholar?q=" + inputText[1];
 						else
 							window.location = "http://www.google.com/search?q=" + inputText[1];
+				}
 				else if (inputText.length == 1)
+				{
 						if (inputText[0] === "g")
 							window.location = "http://www.google.com/"
 						else if (inputText[0] === "yt")
@@ -42,6 +44,7 @@
 							window.location = "https://scholar.google.pt/";
 						else
 							window.location = "http://www.google.com/search?q=" + inputText;
+				}
 				else
 						window.location = "http://www.google.com/search?q=" + inputTextValue;
 
