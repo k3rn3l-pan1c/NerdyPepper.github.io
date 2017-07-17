@@ -6,51 +6,60 @@
         <link rel="stylesheet" href="style.css">
         <link rel="icon" href="favicon.ico" type="image/x-icon"/>
     </head>
-	<script>			
+	<script>
 		window.onkeyup = keyup;
 		var inputTextValue;
+		var inputText;
+
 		function keyup(e) {
 			inputTextValue = e.target.value;
+
 			if (e.keyCode == 13) {
-				window.location = "http://www.google.com/search?q=" + inputTextValue;
+				inputText = inputTextValue.split(";");
+
+				if (inputText[0] === "g")
+					window.location = "http://www.google.com/search?q=" + inputText[1];
+				else if (inputText[0] === "yt")
+					window.location = "https://www.youtube.com/results?search_query=" + inputText[1];
+				else if (inputText[0] === "git")
+					window.location = "https://github.com/search?q=" + inputText[1] + "&ref=simplesearch";
+				else if (inputText[0] === "sch")
+					window.location = "https://scholar.google.pt/scholar?q=" + inputText[1];
+				else if (inputText.length >= 2)
+					window.location = "http://www.google.com/search?q=" + inputText[1];
+				else if ((inputTextValue.substring(0,4) === "http") )
+						window.location = inputTextValue; <!-- Valid for https and http-->
+				else
+					window.location = "http://www.google.com/search?q=" + inputText;
+
 			}
 		}
 	</script>
 
-	
-	<div id="top_bar">
-		<a id="youtube", href="https://www.youtube.com">youtube</a>
-		<a id="dota2", href="https://www.reddit.com/r/DotA2">r/DotA2</a>
-		<a id="android", href="https://www.reddit.com/r/androidthemes">r/androidthemes</a>
-		<a id="wiki", href="https://wikipedia.com">wikipedia</a>
-		<a id="rice", href="https://www.reddit.com/r/unixporn">r/unixporn</a>
-		<a id="xda", href="https://xda-developers.com">xda</a>
-</div>
-	
 	<div id="logo">
 		<!--Uses text and not an image to speed things up -->
-		<span style="color: var(--blue)">G</span>
+		<span style="color: var(--darkblue)">G</span>
 		<span style="color: var(--red)">o</span>
 		<span style="color: var(--yellow)">o</span>
-		<span style="color: var(--blue)">g</span>
+		<span style="color: var(--darkblue)">g</span>
 		<span style="color: var(--green);)">l</span>
 		<span style="color: var(--red);)">e</span>
 	</div>
-	
+
+
 	<div>
 		<input id="search_bar", style="search", type="text", spellcheck="false", onKeydown="Javascript: if (event.keyCode == 13) search();", autofocus>
 	</div>
-	
-	<div id="icons", style="font-size:24px">
-		<i id="github", class="fa fa-github-alt", onclick="Javascript: window.location = 'https://github.com/NerdyPepper'"></i>
-		<i id="gplus", class="fa fa-google-plus", onclick="Javascript: window.location = 'https://plus.google.com'"></i>
-        <i id="mail", class="fa fa-envelope", onclick="Javascript: window.location = 'https://inbox.google.com'"></i>
-        <i id="facebook", class="fa fa-facebook", onclick="Javascript: window.location = 'https://facebook.com/messages'"></i>
-        <i id="reddit", class="fa fa-reddit-alien", onclick="Javascript: window.location = 'https://www.reddit.com'"></i>
+
+	<div id="icons" ,="" style="font-size:24px">
+		<i id="github" ,="" class="fa fa-github-alt" onclick="Javascript: window.location = 'https://github.com/login'"></i>
+    <i id="mail" ,="" class="fa fa-envelope" onclick="Javascript: window.location = 'https://adfs.ua.pt/adfs/ls/?wa=wsignin1.0&wtrealm=https%3a%2f%2fmail.ua.pt%2fautentica2%2f&wctx=rm%3d0%26id%3dpassive%26ru%3d%252fautentica2%252f&wct=2017-07-08T22%3a12%3a37Z&whr=http%3a%2f%2fadfs.ua.pt%2fadfs%2fservices%2ftrust'"></i>
+    <i id="facebook" ,="" class="fa fa-facebook" onclick="Javascript: window.location = 'https://facebook.com/'"></i>
+    <i id="linkedin" ,="" class="fa fa-linkedin" onclick="Javascript: window.location = 'https://www.linkedin.com/'"></i>
+		<i id="youtube" ,="" class="fa fa-youtube" onclick="Javascript: window.location = 'https://www.youtube.com//'"></i>
 	</div>
-	
-	
-	
+
+
+
 	</body>
 </head>
-
