@@ -15,22 +15,38 @@
 			inputTextValue = e.target.value;
 
 			if (e.keyCode == 13) {
+				<!--https and http-->
+				if ((inputTextValue.substring(0,4) === "http") )
+						window.location = inputTextValue;
+
+				<!-- Split string-->
 				inputText = inputTextValue.split(";");
 
-				if (inputText[0] === "g")
-					window.location = "http://www.google.com/search?q=" + inputText[1];
-				else if (inputText[0] === "yt")
-					window.location = "https://www.youtube.com/results?search_query=" + inputText[1];
-				else if (inputText[0] === "git")
-					window.location = "https://github.com/search?q=" + inputText[1] + "&ref=simplesearch";
-				else if (inputText[0] === "sch")
-					window.location = "https://scholar.google.pt/scholar?q=" + inputText[1];
-				else if (inputText.length >= 2)
-					window.location = "http://www.google.com/search?q=" + inputText[1];
-				else if ((inputTextValue.substring(0,4) === "http") )
-						window.location = inputTextValue; <!-- Valid for https and http-->
+				if (inputText.length == 2)
+					if (inputText[1].length != 0)
+						if (inputText[0] === "g")
+							window.location = "http://www.google.com/search?q=" + inputText[1];
+						else if (inputText[0] === "yt")
+							window.location = "https://www.youtube.com/results?search_query=" + inputText[1];
+						else if (inputText[0] === "git")
+							window.location = "https://github.com/search?q=" + inputText[1] + "&ref=simplesearch";
+						else if (inputText[0] === "sch")
+							window.location = "https://scholar.google.pt/scholar?q=" + inputText[1];
+						else
+							window.location = "http://www.google.com/search?q=" + inputText[1];
+					else
+						if (inputText[0] === "g")
+							window.location = "http://www.google.com/"
+						else if (inputText[0] === "yt")
+							window.location = "https://www.youtube.com/"
+						else if (inputText[0] === "git")
+							window.location = "https://github.com/"
+						else if (inputText[0] === "sch")
+							window.location = "https://scholar.google.pt/";
+						else
+							window.location = "http://www.google.com/" + inputTextValue;
 				else
-					window.location = "http://www.google.com/search?q=" + inputText;
+						window.location = "http://www.google.com/search?q=" + inputTextValue;
 
 			}
 		}
