@@ -98,7 +98,7 @@
 		user-select: none;
 	}
 
-	#github ,#gplus, #twitter, #facebook, #mail, #reddit, #linkedin, #youtube{
+	#github ,#gplus, #twitter, #facebook, #mail, #reddit, #linkedin, #youtube, #elearning{
 		color: var(--main-color);
 		transition: 0.25s ease;
         border-radius: 100px;
@@ -107,6 +107,10 @@
         margin: 5px;
         line-height: 45px;
 	}
+
+		#elearning {
+				background-color: var(--green);
+		}
 
     #github {
         background-color: var(--violet);
@@ -128,7 +132,7 @@
         background-color: var(--red);
     }
 
-	#github:hover, #facebook:hover, #mail:hover, #linkedin:hover, #youtube:hover {
+	#elearning:hover, #github:hover, #facebook:hover, #mail:hover, #linkedin:hover, #youtube:hover {
         filter: opacity(0.6);
 	}
 
