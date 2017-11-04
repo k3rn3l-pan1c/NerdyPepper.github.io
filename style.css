@@ -4,6 +4,7 @@
 		--green: #87be57;
 		--orange: #ebcb8b;
 		--red: #bf4752;
+		--winecolor: #FF2E2E;
 		--cyan: #88c0d0;
 		--blue: #81A1C1;
 		--darkblue: #0077B5;
@@ -98,7 +99,7 @@
 		user-select: none;
 	}
 
-	#github ,#gplus, #twitter, #facebook, #mail, #reddit, #linkedin, #youtube, #elearning, #todoist{
+	#symbolab, #github, #gplus, #twitter, #facebook, #mail, #reddit, #linkedin, #youtube, #elearning, #todoist{
 		color: var(--main-color);
 		transition: 0.25s ease;
         border-radius: 100px;
@@ -107,9 +108,14 @@
         margin: 5px;
         line-height: 45px;
 	}
+		#symbolab {
+				background-color: var(--winecolor);
+		}
+
 		#todoist {
 				background-color: var(--red);
 		}
+
 		#elearning {
 				background-color: var(--green);
 		}
@@ -134,7 +140,7 @@
         background-color: var(--red);
     }
 
-	#todoist:hover, #elearning:hover, #github:hover, #facebook:hover, #mail:hover, #linkedin:hover, #youtube:hover {
+	#symbolab, #todoist:hover, #elearning:hover, #github:hover, #facebook:hover, #mail:hover, #linkedin:hover, #youtube:hover {
         filter: opacity(0.6);
 	}
 
