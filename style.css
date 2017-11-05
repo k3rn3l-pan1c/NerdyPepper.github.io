@@ -2,6 +2,7 @@
 		--main-color: #111112;
 		--main-muted: #aaaaaa;
 		--green: #87be57;
+		--normalgreen: #008000;
 		--orange: #ebcb8b;
 		--red: #bf4752;
 		--winecolor: #FF2E2E;
@@ -99,7 +100,7 @@
 		user-select: none;
 	}
 
-	#symbolab, #github, #gplus, #twitter, #facebook, #mail, #reddit, #linkedin, #youtube, #elearning, #todoist{
+	#symbolab, #github, #gplus, #twitter, #facebook, #mail, #reddit, #linkedin, #youtube, #elearning, #todoist, #overleaf{
 		color: var(--main-color);
 		transition: 0.25s ease;
         border-radius: 100px;
@@ -108,9 +109,6 @@
         margin: 5px;
         line-height: 45px;
 	}
-		#symbolab {
-				background-color: var(--winecolor);
-		}
 
 		#todoist {
 				background-color: var(--red);
@@ -140,7 +138,11 @@
         background-color: var(--red);
     }
 
-	#symbolab, #todoist:hover, #elearning:hover, #github:hover, #facebook:hover, #mail:hover, #linkedin:hover, #youtube:hover {
+		#overleaf {
+        background-color: var(--normalgreen);
+    }
+
+	#symbolab:hover, #todoist:hover, #elearning:hover, #github:hover, #facebook:hover, #mail:hover, #linkedin:hover, #youtube:hover, #overleaf:hover {
         filter: opacity(0.6);
 	}
 
