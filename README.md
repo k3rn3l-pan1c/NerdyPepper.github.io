@@ -25,12 +25,12 @@ The search tab recognizes some commands. You can:
 - Perform quick translations:
 	- **pt-en**: Portuguese to English
 	- **en-pt**: English to Portuguese
-- Follow a link if an addres is given (http or https)
+- Follow a link if an address is given (http or https)
 
 ## Default Behaviour
-By default the search engine choosen is google.com
+By default the search engine chosen is google.com
 
 
 ---
  
-Inspired by [NerdyPepper](https://github.com/NerdyPepper). The original Nerdy Pepper work is avalaible [here](https://github.com/NerdyPepper/NerdyPepper.github.io)
+Inspired by [NerdyPepper](https://github.com/NerdyPepper). The original Nerdy Pepper work is available [here](https://github.com/NerdyPepper/NerdyPepper.github.io)
