@@ -1,27 +1,36 @@
 # k3rn3l pan1c startup page
 
-My currently startup page 
+My currently awesome startup page!
+
+Provides fast links for:
+
+- Todoist
+- Elearning
+- Github
+- Google Drive
+- University Email
+- Facebook
+- LinkedIn
+- Youtube 
+- Overleaf
+
+## Custom commands
+The search tab recognizes some commands. You can:
+
+- Change the search engine **on the fly**. The command and query separator is a semicolon, `;`
+	- **yt**:  youtube
+	- **g**:   google
+	- **git**: github
+	- **sch**: google.scholar
+- Perform quick translations:
+	- **pt-en**: Portuguese to English
+	- **en-pt**: English to Portuguese
+- Follow a link if an addres is given (http or https)
+
+## Default Behaviour
+By default the search engine choosen is google.com
 
 
-
-## JS query parser
-It is now possible to change the search engine:
-
-### Instructions
-* Separate the search engine indicator and the search content with a comma (;)
-* Suported websites indicators:
-  * yt:  youtube
-  * g:   google
-  * git: github
-  * sch: google.scholar
-
-By default, if no indicator is provided, the search engine choosen is google.com
-If an addres is given (http or https), you are redirected to that website.
-
-
-#
-
-
-Inspired by [NerdyPepper](https://github.com/NerdyPepper)
-
-[Original NerdyPepper Repo](https://github.com/NerdyPepper/NerdyPepper.github.io)
+---
+ 
+Inspired by [NerdyPepper](https://github.com/NerdyPepper). The original Nerdy Pepper work is avalaible [here](https://github.com/NerdyPepper/NerdyPepper.github.io)
