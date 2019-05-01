@@ -63,7 +63,7 @@
 	}
 
 	#logo {
-		margin-top: 100px;
+		margin-top: 200px;
 		font-family: 'Product Sans', monospace;
 		font-size: 80px;
 		text-align: center;
@@ -100,7 +100,7 @@
 		user-select: none;
 	}
 
-	#symbolab, #github, #gplus, #twitter, #facebook, #mail, #reddit, #linkedin, #youtube, #elearning, #todoist, #overleaf, #drive{
+	#todoist, #calendar, #toggl, #evernote, #github, #drive, #gmail, #mail, #messenger, #linkedin, #youtube, #overleaf{
 		color: var(--main-color);
 		transition: 0.25s ease;
         border-radius: 100px;
@@ -114,9 +114,17 @@
 				background-color: var(--red);
 		}
 
-		#elearning {
-				background-color: var(--green);
+		#calendar {
+				background-color: var(--magenta);
 		}
+		#toggl {
+				background-color: var(--red);
+		}
+
+		#evernote {
+				background-color: #5ba525
+		}
+
 
     #github {
         background-color: var(--violet);
@@ -125,9 +133,13 @@
     #drive {
         background-color: #1fa463 /* var(--white); */
     }
+	
+	 #gmail {
+        background-color: var(--winecolor); 
+    }
 
-    #facebook {
-        background-color: var(--blue);
+    #messenger {
+        background-color: var(--cyan);
     }
 
     #mail {
@@ -146,7 +158,7 @@
         background-color: var(--normalgreen);
     }
 
-	#symbolab:hover, #todoist:hover, #elearning:hover, #github:hover, #drive:hover, #facebook:hover, #mail:hover, #linkedin:hover, #youtube:hover, #overleaf:hover {
+	#todoist:hover, #calendar:hover, #toggl:hover, #evernote:hover, #github:hover, #drive:hover, #gmail:hover, #mail:hover, #messenger:hover, #linkedin:hover, #youtube:hover, #overleaf:hover{
         filter: opacity(0.6);
 	}
 
