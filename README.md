@@ -1,15 +1,18 @@
-# k3rn3l pan1c startup page
+# martinspedro startup page
 
 My currently awesome startup page!
 
 Provides fast links for:
 
 - Todoist
-- Elearning
+- Google Calendar
+- Toggl
+- Evernote
 - Github
 - Google Drive
+- Gmail
 - University Email
-- Facebook
+- Messenger
 - LinkedIn
 - Youtube 
 - Overleaf
